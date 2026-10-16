@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Review Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #343a40;
+            color: #fff;
+            padding: 15px 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navbar-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar-menu li {
+            margin: 0 15px;
+        }
+
+        .navbar-menu a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .navbar-menu a:hover {
+            text-decoration: underline;
+        }
+
+        /* Container Styles */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        /* Review Section Styles */
+        .reviews {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review-item {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .review-header h2 {
+            color: #333;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .star-rating {
+            font-size: 20px;
+            color: #ffc107;
+        }
+
+        .star {
+            margin-right: 3px;
+            color: #ddd;
+        }
+
+        .star.filled {
+            color: #ffc107;
+        }
+
+        .review-description {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .review-actions {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-left: 10px;
+        }
+
+        .approve-btn {
+            background-color: #28a745;
+        }
+
+        .reject-btn {
+            background-color: #dc3545;
+        }
+
+        button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Admin Dashboard</a>
+            <ul class="navbar-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Add Course</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Enrolled Users</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Course Reviews</h1>
+
+        <div class="reviews">
+            <!-- Review Item -->
+            <div class="review-item">
+                <div class="review-header">
+                    <h2>John Doe</h2>
+                    <div class="star-rating">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star">☆</span>
+                        <span class="star">☆</span>
+                    </div>
+                </div>
+                <p class="review-description">This course was extremely helpful. The content was clear and
+                    well-structured. I learned a lot and would highly recommend it to others.</p>
+                <div class="review-actions">
+                    <button class="approve-btn">Approve</button>
+                    <button class="reject-btn">Reject</button>
+                </div>
+            </div>
+            <!-- Repeat Review Item as needed -->
+        </div>
+    </div>
+</body>
+
+</html>
